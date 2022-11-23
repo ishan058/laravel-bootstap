@@ -1,7 +1,10 @@
 @extends('layout.app')
 
 @section('content')
-<div class="container">
+<div class="card text-center" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+  <div class="container">
     <form method="post" action="{{route('registerUser')}}">
         @csrf
         <div class="mb-3">
@@ -34,5 +37,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Signup</button>
     </form>
+</div>
+  </div>
 </div>
 @endsection
