@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function register(){
         return view('register');
-        return redirect("/login");
+        // return redirect('/login');
     }
     
     
