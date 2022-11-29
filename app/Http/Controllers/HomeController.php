@@ -11,8 +11,8 @@ class HomeController extends Controller
     }
 
     public function dashboard(){
-        $posts = Post::all(); //select = from posts;
-        // dd($posts);
+        $posts = Post::all();
+        // $posts = Post::where('user_id','=', auth()->user()->id)->get(); //select = from posts;
         return view('dashboard', compact('posts'));
     }
 

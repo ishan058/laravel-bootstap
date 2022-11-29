@@ -17,6 +17,11 @@
             <tr>
                 <td>{{$post->title}}</td>
                 <td>{{$post->user->name}}</td>
+
+                @if(auth()->user()->id == $post->user->id)
+                <td><button>Delete</button></td>
+                @endif
+
             </tr>
             @endforeach
         </tbody>
